@@ -190,10 +190,9 @@ html.js .flow.in .pill{opacity:1;scale:1}html.js .flow.in .lnk-v,html.js .flow.i
 .tagline span{display:inline-block;animation:bob 3.2s ease-in-out infinite;animation-delay:calc(var(--i)*.25s)}
 @keyframes bob{0%,100%{translate:0 0}50%{translate:0 -4px;color:var(--red)}}
 }
-.pause{width:100vw;margin:80px 0 0 calc(50% - 50vw);background:#dfe2da;padding:70px 20px;text-align:center}
-.flow2 .pill{background:#f4f5f1;color:#3f423d}
-.flow2 .lnk-v{background:#f4f5f1}
-@media (max-width:820px){.pause{padding:50px 20px;margin-top:60px}}
+.pause{width:100vw;margin:80px 0 0 calc(50% - 50vw);background:var(--black);color:#fff;padding:70px 20px;text-align:center}
+.pause-t{font-family:var(--disp);font-weight:600;text-transform:uppercase;font-size:clamp(34px,6vw,72px);line-height:1;letter-spacing:.01em}
+@media (max-width:820px){.pause{padding:48px 20px;margin-top:60px}}
 [hidden]{display:none!important}
 </style><script>(function(){var H=document.documentElement;H.classList.add('js');
 var R=matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -292,17 +291,9 @@ targets.forEach(function(e){io.observe(e)});
    <div class="act"><a class="btn out" href="TG_BOT">Узнать первой →</a></div></div></div>
  </div>
 
- <div class="pause">
-  <div class="flow flow2">
-   <span class="pill">берёшь пакет</span>
-   <span class="lnk-v" style="--x:160px"></span>
-   <span class="pill" style="margin-left:70px">платишь один раз</span>
-   <span class="lnk-v" style="--x:220px"></span>
-   <span class="pill" style="margin-left:110px">получаешь всё</span>
-  </div>
- </div>
+ <div class="pause"><div class="pause-t">Пакетом дешевле <span style="white-space:nowrap">на 20%</span></div></div>
 
- <div class="label meta" style="margin-top:20px"><span>Пакеты</span><span>выгоднее на 20%</span></div>
+ <div class="label meta" style="margin-top:20px"><span>Пакеты</span><span></span></div>
  <div class="two">
   <div class="redcard grain" style="margin:0;transform:rotate(-1.2deg)"><span class="stamp">2 урока</span><h3 style="margin-top:14px">Подача</h3><p style="margin-top:10px;font-size:14px">Голос + заголовки. Чтобы тебя не пролистывали ни на первой фразе, ни на первом кадре.</p>
    <div class="price-row"><div class="price"><span class="strike">70 €</span>55 €</div><a class="btn light" href="WFP_PAKET_PODACHA">Купить пакет →</a></div></div>
